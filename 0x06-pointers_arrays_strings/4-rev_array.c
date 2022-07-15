@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
 * reverse_array - Reverse the content of an array of integers
