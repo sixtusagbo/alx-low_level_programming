@@ -5,7 +5,7 @@
  * @head: head of the list
  * @str: string to be added to the list
  *
- * Return: the address of new element or NULL if it fails
+ * Return: the address of new element or NULL if it fails.
  */
 list_t *add_node(list_t **head, const char *str)
 {
