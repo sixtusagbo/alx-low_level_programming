@@ -1,11 +1,11 @@
-#include "list.h"
+#include "lists.h"
 
 /**
- * add_node - adds a new node at the beginning of a `list_t` list
+ * add_node - adds a new node at the beginning of a list_t list
  * @head: head of the list
  * @str: string to be added to the list
  *
- * Return: the address of new element or `NULL` if it fails
+ * Return: the address of new element or NULL if it fails
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -22,8 +22,8 @@ list_t *add_node(list_t **head, const char *str)
 		;
 
 	new->len = nchar;
-	new->next = *head;
-	*head = new;
+	new->next = (*head);
+	(*head) = new;
 
 	return (*head);
 }
